@@ -1,0 +1,17 @@
+services:
+  db:
+    image: mysql:8.1
+    container_name: mysql_ac1
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: ac1db
+      MYSQL_USER: ac1user
+      MYSQL_PASSWORD: akasha
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

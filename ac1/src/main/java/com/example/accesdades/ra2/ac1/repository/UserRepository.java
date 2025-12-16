@@ -11,10 +11,10 @@ import java.util.List;
 
 @Repository
 public class UserRepository {
-    
+
     @Autowired
     private JdbcTemplate jdbcTemplate;
-    
+
     private static final class UsuariRowMapper implements RowMapper<User> {
         @Override
         public User mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -27,13 +27,20 @@ public class UserRepository {
             user.setUltimAcces(rs.getTimestamp("ultimAcces"));
             user.setDataCreated(rs.getTimestamp("dataCreated"));
             user.setDataUpdated(rs.getTimestamp("dataUpdated"));
+            user.setImage_path(rs.getString("image_path")); 
             return user;
         }
     }
-    
+
     public int save(User user){
-        String sql = "INSERT INTO users (name, description, email, password, ultimAcces, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, NOW(), NOW())";
-        return jdbcTemplate.update(sql, user.getName(), user.getDescription(), user.getEmail(), user.getPassword(), user.getUltimAcces());
+        String sql = "INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())";
+        return jdbcTemplate.update(sql, 
+                user.getName(), 
+                user.getDescription(), 
+                user.getEmail(), 
+                user.getPassword(), 
+                user.getUltimAcces(), 
+                user.getImage_path()); 
     }
 
     public List<User> findAll() {
@@ -45,15 +52,16 @@ public class UserRepository {
         String sql = "SELECT * FROM users WHERE id = ?";
         return jdbcTemplate.query(sql, new UsuariRowMapper(), id);
     }
-    
-    public int update(Long id, User usuari) {
-        String sql = "UPDATE users SET name = ?, description = ?, email = ?, password = ?, ultimAcces = ?, dataUpdated = NOW() WHERE id = ?";
+
+    public int update(Long id, User user) {
+        String sql = "UPDATE users SET name = ?, description = ?, email = ?, password = ?, ultimAcces = ?, image_path = ?, dataUpdated = NOW() WHERE id = ?";
         return jdbcTemplate.update(sql,
-                usuari.getName(),
-                usuari.getDescription(),
-                usuari.getEmail(),
-                usuari.getPassword(),
-                usuari.getUltimAcces(),
+                user.getName(),
+                user.getDescription(),
+                user.getEmail(),
+                user.getPassword(),
+                user.getUltimAcces(),
+                user.getImage_path(), 
                 id);
     }
 
@@ -65,5 +73,10 @@ public class UserRepository {
     public int delete(Long id){
         String sql = "DELETE FROM users WHERE id = ?";
         return jdbcTemplate.update(sql, id);
+    }
+
+    public int updateImagePath(long id, String imagePath){
+        String sql = "UPDATE users SET image_path = ?, dataUpdated = NOW() WHERE id = ?"; 
+        return jdbcTemplate.update(sql, imagePath, id);
     }
 }
