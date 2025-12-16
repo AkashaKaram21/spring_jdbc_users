@@ -53,15 +53,15 @@ public class UserRepository {
         return jdbcTemplate.query(sql, new UsuariRowMapper(), id);
     }
 
-    public int update(Long id, User usuari) {
+    public int update(Long id, User user) {
         String sql = "UPDATE users SET name = ?, description = ?, email = ?, password = ?, ultimAcces = ?, image_path = ?, dataUpdated = NOW() WHERE id = ?";
         return jdbcTemplate.update(sql,
-                usuari.getName(),
-                usuari.getDescription(),
-                usuari.getEmail(),
-                usuari.getPassword(),
-                usuari.getUltimAcces(),
-                usuari.getImage_path(), 
+                user.getName(),
+                user.getDescription(),
+                user.getEmail(),
+                user.getPassword(),
+                user.getUltimAcces(),
+                user.getImage_path(), 
                 id);
     }
 

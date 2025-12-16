@@ -2,23 +2,20 @@ package com.example.accesdades.ra2.ac1.model;
 
 import java.sql.Timestamp;
 
-
 public class User {
     private Long id;
     private String name;
     private String description;
     private String email;
     private String password;
-    private Timestamp ultimAcces;
+    private Timestamp UltimAcces;
     private Timestamp dataCreated;
     private Timestamp dataUpdated;
-
-    public User() {
-        this.dataUpdated = dataUpdated;
-    }
     private String image_path;
 
     
+    public User() {
+    }
     public Long getId() {
         return id;
     }
@@ -50,10 +47,10 @@ public class User {
         this.password = password;
     }
     public Timestamp getUltimAcces() {
-        return ultimAcces;
+        return UltimAcces;
     }
     public void setUltimAcces(Timestamp ultimAcces) {
-        this.ultimAcces = ultimAcces;
+        UltimAcces = ultimAcces;
     }
     public Timestamp getDataCreated() {
         return dataCreated;
@@ -73,6 +70,5 @@ public class User {
     public void setImage_path(String image_path) {
         this.image_path = image_path;
     }
-
     
 }

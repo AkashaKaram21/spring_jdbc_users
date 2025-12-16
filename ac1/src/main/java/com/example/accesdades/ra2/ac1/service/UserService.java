@@ -33,7 +33,7 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public int addUser(User user) {
+    public int save(User user) {
         return userRepository.save(user);
     }
 
@@ -56,7 +56,7 @@ public class UserService {
     public String saveUserImage(long userId, MultipartFile imageFile) throws Exception {
 
         List<User> user = userRepository.findUserById(userId);
-        if (user.isEmpty()) throw new Exception("Usuari amb id " + userId + " no trobat");
+        if (user.isEmpty()) throw new Exception("Usuario con id " + userId + " no encontrado");
 
         Path imagesFolder = Paths.get("src/main/resources/public/images");
         Files.createDirectories(imagesFolder);
@@ -100,7 +100,7 @@ public class UserService {
 
                 if (data.length < 4) continue;
 
-                User user = new User();
+                User user = new User();  
                 user.setName(data[0]);
                 user.setDescription(data[1]);
                 user.setEmail(data[2]);
@@ -140,7 +140,7 @@ public class UserService {
             JsonNode usersNode = dataNode.path("users");
             for (JsonNode userNode : usersNode) {
 
-                User user = new User();
+                User user = new User();  // Usa constructor vacío
                 user.setName(userNode.path("name").asText());
                 user.setDescription(userNode.path("description").asText());
                 user.setEmail(userNode.path("email").asText());
