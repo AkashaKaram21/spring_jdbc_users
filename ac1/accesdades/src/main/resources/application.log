@@ -1,0 +1,171 @@
+[INFO] 2025-12-16 20:59:54 - Class: UserService - Method: save - Message: Guardant nou usuari: Carlos García
+[INFO] 2025-12-16 20:59:54 - Class: UserRepository - Method: save - Message: Executant INSERT: INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[INFO] 2025-12-16 20:59:54 - Class: UserRepository - Method: save - Message: INSERT executat correctament. Usuari creat amb ID: nou
+[INFO] 2025-12-16 20:59:54 - Class: UserService - Method: save - Message: Usuari guardat correctament amb ID
+[INFO] 2025-12-16 21:00:08 - Class: UserService - Method: save - Message: Guardant nou usuari: Carlos García
+[INFO] 2025-12-16 21:00:08 - Class: UserRepository - Method: save - Message: Executant INSERT: INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[ERROR] 2025-12-16 21:00:08 - Class: UserRepository - Method: save - Message: Error executant INSERT a la taula users - Exception: PreparedStatementCallback; SQL [INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())]; Duplicate entry 'carlos.garcia@example.com' for key 'users.email'
+[ERROR] 2025-12-16 21:00:08 - Class: UserService - Method: save - Message: Error guardant l'usuari: Carlos García - Exception: PreparedStatementCallback; SQL [INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())]; Duplicate entry 'carlos.garcia@example.com' for key 'users.email'
+[INFO] 2025-12-16 21:01:25 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:01:25 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:01:25 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:01:25 - Class: UserService - Method: findUserById - Message: Usuari no trobat amb ID: 1
+[INFO] 2025-12-16 21:01:35 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:01:35 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:01:35 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:01:35 - Class: UserService - Method: findUserById - Message: Usuari no trobat amb ID: 1
+[INFO] 2025-12-16 21:05:31 - Class: UserService - Method: save - Message: Guardant nou usuari: string
+[INFO] 2025-12-16 21:05:31 - Class: UserRepository - Method: save - Message: Executant INSERT: INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[INFO] 2025-12-16 21:05:31 - Class: UserRepository - Method: save - Message: INSERT executat correctament. Usuari creat amb ID: 0
+[INFO] 2025-12-16 21:05:31 - Class: UserService - Method: save - Message: Usuari guardat correctament amb ID
+[INFO] 2025-12-16 21:05:36 - Class: UserService - Method: save - Message: Guardant nou usuari: Laura Martínez
+[INFO] 2025-12-16 21:05:36 - Class: UserRepository - Method: save - Message: Executant INSERT: INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[INFO] 2025-12-16 21:05:36 - Class: UserRepository - Method: save - Message: INSERT executat correctament. Usuari creat amb ID: nou
+[INFO] 2025-12-16 21:05:36 - Class: UserService - Method: save - Message: Usuari guardat correctament amb ID
+[INFO] 2025-12-16 21:06:13 - Class: UserService - Method: save - Message: Guardant nou usuari: Akasha
+[INFO] 2025-12-16 21:06:13 - Class: UserRepository - Method: save - Message: Executant INSERT: INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[INFO] 2025-12-16 21:06:13 - Class: UserRepository - Method: save - Message: INSERT executat correctament. Usuari creat amb ID: 1
+[INFO] 2025-12-16 21:06:13 - Class: UserService - Method: save - Message: Usuari guardat correctament amb ID
+[INFO] 2025-12-16 21:06:28 - Class: UserService - Method: save - Message: Guardant nou usuari: Akasha
+[INFO] 2025-12-16 21:06:28 - Class: UserRepository - Method: save - Message: Executant INSERT: INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[ERROR] 2025-12-16 21:06:28 - Class: UserRepository - Method: save - Message: Error executant INSERT a la taula users - Exception: PreparedStatementCallback; SQL [INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())]; Duplicate entry 'akasha' for key 'users.email'
+[ERROR] 2025-12-16 21:06:28 - Class: UserService - Method: save - Message: Error guardant l'usuari: Akasha - Exception: PreparedStatementCallback; SQL [INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())]; Duplicate entry 'akasha' for key 'users.email'
+[INFO] 2025-12-16 21:06:33 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:06:33 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:06:33 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 1 usuaris
+[INFO] 2025-12-16 21:06:33 - Class: UserService - Method: findUserById - Message: Usuari trobat amb ID: 1
+[INFO] 2025-12-16 21:09:09 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:09:09 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:09:09 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:09:09 - Class: UserService - Method: findUserById - Message: Usuari no trobat amb ID: 1
+[INFO] 2025-12-16 21:09:48 - Class: UserService - Method: findAll - Message: Obtenint tots els usuaris
+[INFO] 2025-12-16 21:09:48 - Class: UserRepository - Method: findAll - Message: Executant consulta: SELECT * FROM users
+[INFO] 2025-12-16 21:09:48 - Class: UserRepository - Method: findAll - Message: Consulta SELECT * FROM users executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:09:54 - Class: UserService - Method: findAll - Message: Obtenint tots els usuaris
+[INFO] 2025-12-16 21:09:54 - Class: UserRepository - Method: findAll - Message: Executant consulta: SELECT * FROM users
+[INFO] 2025-12-16 21:09:54 - Class: UserRepository - Method: findAll - Message: Consulta SELECT * FROM users executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:10:01 - Class: UserService - Method: findAll - Message: Obtenint tots els usuaris
+[INFO] 2025-12-16 21:10:01 - Class: UserRepository - Method: findAll - Message: Executant consulta: SELECT * FROM users
+[INFO] 2025-12-16 21:10:01 - Class: UserRepository - Method: findAll - Message: Consulta SELECT * FROM users executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:10:18 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 2
+[INFO] 2025-12-16 21:10:18 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 2
+[INFO] 2025-12-16 21:10:18 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 2 executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:10:18 - Class: UserService - Method: findUserById - Message: Usuari no trobat amb ID: 2
+[INFO] 2025-12-16 21:10:25 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 10
+[INFO] 2025-12-16 21:10:25 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 10
+[INFO] 2025-12-16 21:10:26 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 10 executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:10:26 - Class: UserService - Method: findUserById - Message: Usuari no trobat amb ID: 10
+[INFO] 2025-12-16 21:10:30 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 10
+[INFO] 2025-12-16 21:10:30 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 10
+[INFO] 2025-12-16 21:10:30 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 10 executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:10:30 - Class: UserService - Method: findUserById - Message: Usuari no trobat amb ID: 10
+[INFO] 2025-12-16 21:10:31 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 10
+[INFO] 2025-12-16 21:10:31 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 10
+[INFO] 2025-12-16 21:10:31 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 10 executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:10:31 - Class: UserService - Method: findUserById - Message: Usuari no trobat amb ID: 10
+[INFO] 2025-12-16 21:12:11 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:12:11 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:12:11 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:12:11 - Class: UserService - Method: findUserById - Message: Usuari no trobat amb ID: 1
+[INFO] 2025-12-16 21:13:02 - Class: UserService - Method: save - Message: Guardant nou usuari: Akasha
+[INFO] 2025-12-16 21:13:02 - Class: UserRepository - Method: save - Message: Executant INSERT: INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[INFO] 2025-12-16 21:13:02 - Class: UserRepository - Method: save - Message: INSERT executat correctament. Usuari creat amb ID: 1
+[INFO] 2025-12-16 21:13:02 - Class: UserService - Method: save - Message: Usuari guardat correctament amb ID
+[INFO] 2025-12-16 21:13:20 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:13:20 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:13:20 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 1 usuaris
+[INFO] 2025-12-16 21:13:20 - Class: UserService - Method: findUserById - Message: Usuari trobat amb ID: 1
+[INFO] 2025-12-16 21:13:45 - Class: UserService - Method: update - Message: Actualitzant usuari amb ID: 1
+[INFO] 2025-12-16 21:13:45 - Class: UserRepository - Method: update - Message: Executant UPDATE: UPDATE users SET name = 'string', description = 'string', email = 'string' WHERE id = 1
+[INFO] 2025-12-16 21:13:45 - Class: UserRepository - Method: update - Message: UPDATE executat correctament per l'usuari amb ID: 1. Files afectades: 1
+[INFO] 2025-12-16 21:13:45 - Class: UserService - Method: update - Message: Usuari actualitzat correctament amb ID: 1
+[INFO] 2025-12-16 21:13:59 - Class: UserService - Method: update - Message: Actualitzant usuari amb ID: 1
+[INFO] 2025-12-16 21:13:59 - Class: UserRepository - Method: update - Message: Executant UPDATE: UPDATE users SET name = 'string', description = 'string', email = 'string' WHERE id = 1
+[INFO] 2025-12-16 21:13:59 - Class: UserRepository - Method: update - Message: UPDATE executat correctament per l'usuari amb ID: 1. Files afectades: 1
+[INFO] 2025-12-16 21:13:59 - Class: UserService - Method: update - Message: Usuari actualitzat correctament amb ID: 1
+[INFO] 2025-12-16 21:17:51 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:17:51 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:17:51 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:17:51 - Class: UserService - Method: findUserById - Message: Usuari no trobat amb ID: 1
+[INFO] 2025-12-16 21:18:42 - Class: UserService - Method: save - Message: Guardant nou usuari: Akasha
+[INFO] 2025-12-16 21:18:42 - Class: UserRepository - Method: save - Message: Executant INSERT: INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[INFO] 2025-12-16 21:18:42 - Class: UserRepository - Method: save - Message: INSERT executat correctament. Usuari creat amb ID: 1
+[INFO] 2025-12-16 21:18:42 - Class: UserService - Method: save - Message: Usuari guardat correctament amb ID
+[INFO] 2025-12-16 21:19:09 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:19:09 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:19:09 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 1 usuaris
+[INFO] 2025-12-16 21:19:09 - Class: UserService - Method: findUserById - Message: Usuari trobat amb ID: 1
+[INFO] 2025-12-16 21:19:35 - Class: UserService - Method: update - Message: Actualitzant usuari amb ID: 1
+[INFO] 2025-12-16 21:19:35 - Class: UserRepository - Method: update - Message: Executant UPDATE: UPDATE users SET name = 'string', description = 'string', email = 'string' WHERE id = 1
+[INFO] 2025-12-16 21:19:35 - Class: UserRepository - Method: update - Message: UPDATE executat correctament per l'usuari amb ID: 1. Files afectades: 1
+[INFO] 2025-12-16 21:19:35 - Class: UserService - Method: update - Message: Usuari actualitzat correctament amb ID: 1
+[INFO] 2025-12-16 21:19:44 - Class: UserService - Method: update - Message: Actualitzant usuari amb ID: 1
+[INFO] 2025-12-16 21:19:44 - Class: UserRepository - Method: update - Message: Executant UPDATE: UPDATE users SET name = 'Akasha', description = 'dfnsaknf', email = 'hdisksa' WHERE id = 1
+[INFO] 2025-12-16 21:19:44 - Class: UserRepository - Method: update - Message: UPDATE executat correctament per l'usuari amb ID: 1. Files afectades: 1
+[INFO] 2025-12-16 21:19:44 - Class: UserService - Method: update - Message: Usuari actualitzat correctament amb ID: 1
+[INFO] 2025-12-16 21:19:59 - Class: UserService - Method: update - Message: Actualitzant usuari amb ID: 1
+[INFO] 2025-12-16 21:19:59 - Class: UserRepository - Method: update - Message: Executant UPDATE: UPDATE users SET name = 'Akasha', description = 'dfnsaknf', email = 'hdisksa' WHERE id = 1
+[INFO] 2025-12-16 21:20:00 - Class: UserRepository - Method: update - Message: UPDATE executat correctament per l'usuari amb ID: 1. Files afectades: 1
+[INFO] 2025-12-16 21:20:00 - Class: UserService - Method: update - Message: Usuari actualitzat correctament amb ID: 1
+[INFO] 2025-12-16 21:20:10 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 2
+[INFO] 2025-12-16 21:20:10 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 2
+[INFO] 2025-12-16 21:20:10 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 2 executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:20:10 - Class: UserService - Method: findUserById - Message: Usuari no trobat amb ID: 2
+[INFO] 2025-12-16 21:20:38 - Class: UserService - Method: update - Message: Actualitzant usuari amb ID: 1
+[INFO] 2025-12-16 21:20:38 - Class: UserRepository - Method: update - Message: Executant UPDATE: UPDATE users SET name = 'string', description = 'string', email = 'string' WHERE id = 1
+[INFO] 2025-12-16 21:20:38 - Class: UserRepository - Method: update - Message: UPDATE executat correctament per l'usuari amb ID: 1. Files afectades: 1
+[INFO] 2025-12-16 21:20:38 - Class: UserService - Method: update - Message: Usuari actualitzat correctament amb ID: 1
+[INFO] 2025-12-16 21:20:48 - Class: UserService - Method: update - Message: Actualitzant usuari amb ID: 1
+[INFO] 2025-12-16 21:20:48 - Class: UserRepository - Method: update - Message: Executant UPDATE: UPDATE users SET name = 'dfnksa', description = 'string', email = 'string' WHERE id = 1
+[INFO] 2025-12-16 21:20:48 - Class: UserRepository - Method: update - Message: UPDATE executat correctament per l'usuari amb ID: 1. Files afectades: 1
+[INFO] 2025-12-16 21:20:48 - Class: UserService - Method: update - Message: Usuari actualitzat correctament amb ID: 1
+[INFO] 2025-12-16 21:20:59 - Class: UserService - Method: update - Message: Actualitzant usuari amb ID: 1
+[INFO] 2025-12-16 21:20:59 - Class: UserRepository - Method: update - Message: Executant UPDATE: UPDATE users SET name = 'Akasha Karam', description = 'dfnsaknf', email = 'hdisksa' WHERE id = 1
+[INFO] 2025-12-16 21:20:59 - Class: UserRepository - Method: update - Message: UPDATE executat correctament per l'usuari amb ID: 1. Files afectades: 1
+[INFO] 2025-12-16 21:20:59 - Class: UserService - Method: update - Message: Usuari actualitzat correctament amb ID: 1
+[INFO] 2025-12-16 21:21:14 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:21:14 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:21:14 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 1 usuaris
+[INFO] 2025-12-16 21:21:14 - Class: UserService - Method: findUserById - Message: Usuari trobat amb ID: 1
+[INFO] 2025-12-16 21:22:57 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:22:57 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:22:57 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 0 usuaris
+[INFO] 2025-12-16 21:22:57 - Class: UserService - Method: findUserById - Message: Usuari no trobat amb ID: 1
+[INFO] 2025-12-16 21:23:48 - Class: UserService - Method: save - Message: Guardant nou usuari: Akasha
+[INFO] 2025-12-16 21:23:48 - Class: UserRepository - Method: save - Message: Executant INSERT: INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[INFO] 2025-12-16 21:23:48 - Class: UserRepository - Method: save - Message: INSERT executat correctament. Usuari creat amb ID: 1
+[INFO] 2025-12-16 21:23:48 - Class: UserService - Method: save - Message: Usuari guardat correctament amb ID
+[INFO] 2025-12-16 21:23:59 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:23:59 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:23:59 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 1 usuaris
+[INFO] 2025-12-16 21:23:59 - Class: UserService - Method: findUserById - Message: Usuari trobat amb ID: 1
+[INFO] 2025-12-16 21:24:31 - Class: UserService - Method: save - Message: Guardant nou usuari: aaaa
+[INFO] 2025-12-16 21:24:31 - Class: UserRepository - Method: save - Message: Executant INSERT: INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[INFO] 2025-12-16 21:24:31 - Class: UserRepository - Method: save - Message: INSERT executat correctament. Usuari creat amb ID: 2
+[INFO] 2025-12-16 21:24:31 - Class: UserService - Method: save - Message: Usuari guardat correctament amb ID
+[INFO] 2025-12-16 21:25:00 - Class: UserService - Method: patch - Message: Actualitzant nom d'usuari amb ID: 1 a: Akasha Karam
+[INFO] 2025-12-16 21:25:00 - Class: UserRepository - Method: patch - Message: Executant PATCH: UPDATE users SET name = 'Akasha Karam' WHERE id = 1
+[INFO] 2025-12-16 21:25:00 - Class: UserRepository - Method: patch - Message: PATCH executat correctament per l'usuari amb ID: 1. Nom canviat a: Akasha Karam. Files afectades: 1
+[INFO] 2025-12-16 21:25:00 - Class: UserService - Method: patch - Message: Nom d'usuari actualitzat correctament per ID: 1
+[INFO] 2025-12-16 21:25:00 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:25:00 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:25:00 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 1 usuaris
+[INFO] 2025-12-16 21:25:00 - Class: UserService - Method: findUserById - Message: Usuari trobat amb ID: 1
+[INFO] 2025-12-16 21:25:14 - Class: UserService - Method: findUserById - Message: Buscant usuari amb ID: 1
+[INFO] 2025-12-16 21:25:14 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 1
+[INFO] 2025-12-16 21:25:14 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 1 executada correctament. S'han trobat 1 usuaris
+[INFO] 2025-12-16 21:25:14 - Class: UserService - Method: findUserById - Message: Usuari trobat amb ID: 1
+[INFO] 2025-12-16 21:25:35 - Class: UserService - Method: delete - Message: Eliminant usuari amb ID: 1
+[INFO] 2025-12-16 21:25:35 - Class: UserRepository - Method: delete - Message: Executant DELETE: DELETE FROM users WHERE id = 1
+[INFO] 2025-12-16 21:25:35 - Class: UserRepository - Method: delete - Message: DELETE executat correctament per l'usuari amb ID: 1. Files afectades: 1
+[INFO] 2025-12-16 21:25:35 - Class: UserService - Method: delete - Message: Usuari eliminat correctament amb ID: 1
+[INFO] 2025-12-16 21:26:24 - Class: UserService - Method: save - Message: Guardant nou usuari: aaaa
+[INFO] 2025-12-16 21:26:24 - Class: UserRepository - Method: save - Message: Executant INSERT: INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())
+[ERROR] 2025-12-16 21:26:24 - Class: UserRepository - Method: save - Message: Error executant INSERT a la taula users - Exception: PreparedStatementCallback; SQL [INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())]; Duplicate entry 'dsnda' for key 'users.email'
+[ERROR] 2025-12-16 21:26:24 - Class: UserService - Method: save - Message: Error guardant l'usuari: aaaa - Exception: PreparedStatementCallback; SQL [INSERT INTO users (name, description, email, password, ultimAcces, image_path, dataCreated, dataUpdated) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())]; Duplicate entry 'dsnda' for key 'users.email'
+[INFO] 2025-12-16 21:27:53 - Class: UserService - Method: saveUserImage - Message: Guardant imatge per usuari ID: 2, fitxer: llorar.jpg
+[INFO] 2025-12-16 21:27:53 - Class: UserRepository - Method: findUserById - Message: Executant consulta: SELECT * FROM users WHERE id = 2
+[INFO] 2025-12-16 21:27:53 - Class: UserRepository - Method: findUserById - Message: Consulta SELECT * FROM users WHERE id = 2 executada correctament. S'han trobat 1 usuaris
+[INFO] 2025-12-16 21:27:53 - Class: UserRepository - Method: updateImagePath - Message: Executant UPDATE image_path: UPDATE users SET image_path = '/images/User_2.jpg' WHERE id = 2
+[INFO] 2025-12-16 21:27:53 - Class: UserRepository - Method: updateImagePath - Message: UPDATE image_path executat correctament per l'usuari amb ID: 2. Nou path: /images/User_2.jpg. Files afectades: 1
+[INFO] 2025-12-16 21:27:53 - Class: UserService - Method: saveUserImage - Message: Imatge guardada correctament per usuari ID: 2, ruta: /images/User_2.jpg

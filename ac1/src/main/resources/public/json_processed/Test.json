@@ -1,0 +1,68 @@
+{
+    "data": {
+        "count": 10,
+        "control": "OK",
+        "users": [
+            {
+                "name": "Rita Marshall",
+                "description": "Nulla sunt duis do non ea minim.",
+                "email": "ritamarshall@codact.com",
+                "password": "amet"
+            },
+            {
+                "name": "Rosalyn Wilson",
+                "description": "Labore proident veniam eu aliqua ea eiusmod eu ea.",
+                "email": "rosalynwilson@codact.com",
+                "password": "ipsum"
+            },
+            {
+                "name": "Coleman Finch",
+                "description": "Irure reprehenderit reprehenderit in et qui magna sit deserunt deserunt nostrud.",
+                "email": "colemanfinch@codact.com",
+                "password": "sunt"
+            },
+            {
+                "name": "Sabrina Rivas",
+                "description": "Lorem consequat adipisicing exercitation adipisicing quis qui.",
+                "email": "sabrinarivas@codact.com",
+                "password": "officia"
+            },
+            {
+                "name": "Bertha Gilmore",
+                "description": "Minim dolore quis est eiusmod tempor pariatur magna eiusmod amet proident voluptate quis esse.",
+                "email": "berthagilmore@codact.com",
+                "password": "nisi"
+            },
+            {
+                "name": "Hahn Mckenzie",
+                "description": "Fugiat amet qui voluptate eu.",
+                "email": "hahnmckenzie@codact.com",
+                "password": "mollit"
+            },
+            {
+                "name": "Bobbi Nieves",
+                "description": "Deserunt ad mollit id excepteur Lorem ullamco do.",
+                "email": "bobbinieves@codact.com",
+                "password": "sit"
+            },
+            {
+                "name": "Cheri Rocha",
+                "description": "In sit veniam id sunt est eu magna sint.",
+                "email": "cherirocha@codact.com",
+                "password": "fugiat"
+            },
+            {
+                "name": "Doyle Wallace",
+                "description": "Velit consectetur velit eiusmod culpa ad et consectetur exercitation elit.",
+                "email": "doylewallace@codact.com",
+                "password": "ex"
+            },
+            {
+                "name": "Lana Thomas",
+                "description": "Anim tempor dolor minim ut non minim quis minim ullamco reprehenderit ullamco.",
+                "email": "lanathomas@codact.com",
+                "password": "eiusmod"
+            }
+        ]
+    }
+}
